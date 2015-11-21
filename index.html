@@ -2,17 +2,24 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Code Trip - WORKING TITLE</title>
+	<title>Road Eats</title>
 	<link rel="stylesheet" href="trip.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<h1>Code Trip</h1>
+	<h1>Road Eats</h1>
 	<form>
-		<label for="start">Point A</label>
+		<label for="start">Starting city</label>
 		<input type="text" name="start" id="start">
-		<label for="end">Point B</label>
+		<label for="end">Ending city</label>
 		<input type="text" name="end" id="end">
+		<label for "radius">Max distance from route</label>
+		<select name="radius" id="radius">
+			<option value="1">1 mile</option>
+			<option value="2">2 miles</option>
+			<option value="5">5 miles</option>
+			<option value="10">10 miles</option>
+		</select>		
 		<button type="submit" id="submit" value="Submit">Let's Go!</button>
 	</form>
 </body>
